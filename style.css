@@ -639,7 +639,7 @@ header{
     }
     .countries-inner{
         justify-content: space-between;
-        padding: 0 20px ;
+        
     }
     .country{
         width: 100%;
