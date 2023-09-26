@@ -634,6 +634,9 @@ header{
         grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
+    .religion svg{
+        width: 100%;
+    }
     .countries-inner{
         justify-content: space-between;
     }
