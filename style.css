@@ -1,0 +1,640 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(7, 9, 28);
+    color: white;
+}
+.container{
+    width: 100%;
+    max-width: 1270px;
+    margin: 0 auto;
+}
+main{
+    background: linear-gradient(180deg, #07091C -4.12%, rgba(7, 9, 28, 0.60) 49.39%, rgba(7, 9, 28, 0.20) 85.78%, #07091C 100%), url("/images/Image.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    padding: 32px 0;
+}
+.header-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.header-logo img{
+    width: 100%;
+    max-width: 56px;
+}
+.logo-content{
+    padding-left: 12px;
+}
+.logo-content p:first-child{
+    font-size: 30px;
+    font-weight: 600;
+}
+.logo-content p:last-child{
+    font-size: 16px;
+    font-weight: 500;
+}
+.header-inner .laptop-nav ul{
+    display: flex;
+    align-items: center;
+}
+.header-inner .laptop-nav ul li{
+    margin-left: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    cursor: pointer;
+}
+.language-list{
+    border-right: 2px solid rgba(255, 255, 255, 0.10);    ;
+    border-left: 2px solid rgba(255, 255, 255, 0.10); ;
+    padding: 0px 15px;
+}
+.mobile-nav{
+    display: none;
+}
+.nav-lists{
+    padding: 15px 0;
+    top: 15%;
+    width: 100%;
+    position: fixed;
+    display: none;
+    z-index: 10;
+    background-color: rgb(7, 9, 28);
+    overflow: auto;
+}
+.search-input-mobile{
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.12);
+    padding: 12px 0 12px 12px;
+}
+.search-input-mobile input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+    font-size: 16px;
+    color: white;
+}
+.header-sections{
+    position: relative;
+}
+.header-sections li{
+    margin: 24px 0;
+    
+}
+.nav-lists .header-sections li a{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+}
+.close-active{
+    display: none;
+}
+
+.nav-lists .header-sections .language-mobile{
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 8px;
+    width: 100%;
+    max-width: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; 
+}
+.nav-lists .header-sections .language-mobile img{
+    margin-right: 10px;
+}
+.mobile-subcategories{
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.08);
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: -70%;
+    width: 100%;
+    display: none;
+}
+.mobile-subcategories li{
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    margin-right: 10px;
+    width: 45%;
+}
+.mobile-subcategories li svg{
+    margin-right: 10px;
+}
+.headerSubMenu{
+    display: flex;
+}
+
+/* banner-section */
+.banner-section{
+    padding: 142px 0;
+}
+.banner-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner-bg{
+    position: absolute;
+    fill: linear-gradient(209deg, rgba(255, 255, 255, 0.11) -38.63%, rgba(255, 255, 255, 0.00) 71.19%);
+    z-index: 5;
+    left: 0;
+    top: 10%;
+}
+.location{
+    display: flex;
+    align-items: center;
+}
+.location p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 8px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+}
+.banner-content{
+   text-align: center;
+}
+.banner-title{
+    font-feature-settings: 'liga' off, 'calt' off;
+    text-shadow: 0px 10px 50px rgba(12, 15, 48, 0.40);
+    font-family: Playfair Display;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 104px */
+    text-transform: capitalize;
+}
+.banner-content p{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    margin-bottom: 30px;
+}
+.banner-btn{
+    border-radius: 8px;
+    background: var(--Main, #E54545);
+    padding: 12px 28px 12px 32px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+}
+.carousel .container{
+    overflow: hidden;
+}
+/* .carousel .container::before,
+.carousel .container::after{
+    background-color: linear-gradient(to right, rgba(255, 255, 255, 1)0%, rgba(255, 255, 255, 0)100%);
+    content:  "";
+    height: 100%;
+    position: absolute;
+}
+.carousel .container::before{
+    left: 0;
+    top: 0;
+}
+.carousel .container::after{
+    right: 0;
+    top: 0;
+} */
+.carousel-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.carousel-box{
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    width: 381px;
+}
+.carousel-content{
+    margin-left: 16px;
+}
+.carousel-box img{
+    border-radius: 12px;
+}
+.carousel-content p:first-child{
+    color: rgba(255, 255, 255, 0.60);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+.carousel-content p:last-child{
+    color: var(--White, #FFF);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 26px */
+}
+.about-section{
+    margin: 99px 0;
+}
+.about-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-content{
+    width: 45%;
+}
+.about-content .about-title{
+    color: var(--White, #FFF);
+    font-feature-settings: 'liga' off, 'calt' off;
+    text-shadow: 0px 10px 50px rgba(12, 15, 48, 0.40);
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 52px */
+    margin-bottom: 25px;
+}
+.about-title span{
+    border-bottom: 2px solid  #E54545;
+    padding-bottom: 14px;
+}
+.partners{
+    color: var(--White, #FFF);
+    font-feature-settings: 'liga' off, 'calt' off;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 32px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 26px */
+}
+.about-subtext{
+    color: var(--White, #FFF);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 23.4px */
+}
+.supportLogos{
+    margin-top: 13px;
+    padding: 8px;
+    display: flex;
+}
+.supportLogos svg{
+    margin-right: 13px;
+}
+
+.partner p{
+    display: none;
+}
+.about-section-btns{
+    margin-top: 31px;
+}
+.explore-btn{
+    border-radius: 8px;
+    background: var(--Main, #E54545);
+    padding: 12px 28px;
+    color: var(--White, #FFF);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+    display: inline-flex;
+    align-items: center;
+    margin-right: 16px;
+}
+.explore-btn svg{
+    padding-left: 4px;
+}
+.about-btn{
+    padding: 12px 28px;
+    border-radius: 8px;
+    background: #2C2E3E;
+    padding: 12px 28px;
+    color: var(--White, #FFF);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+   display: inline-flex;
+   align-items: center;
+}
+.about-countries{
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+.about-countries img{
+    width: 100%;
+    max-width: 117px;
+    height: 342px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.about-countries img:hover{
+    
+}
+.religions{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 65px;
+    gap: 25px;
+}
+.religion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 12px;
+    place-items: center;
+    background: rgba(255, 255, 255, 0.04);
+}
+.religion-info .religion-num{
+    color: var(--White, #FFF);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; 
+}
+.religion-info .religion-subtext{
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 26px */
+}
+/* countries-section */
+
+.countries-title{
+    text-align: center;
+}
+.countries-title p:first-child{
+    color: var(--White, #FFF);
+    font-feature-settings: 'liga' off, 'calt' off;
+    text-shadow: 0px 10px 50px rgba(12, 15, 48, 0.40);
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 52px */
+}
+.countries-title p:first-child::before{
+    content: "";
+    width: 50px;
+    position: absolute ;
+    bottom: 0;
+}
+.countries-title p:last-child{
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 26px */
+}
+.countries-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    flex-wrap: wrap;
+}
+.country{
+    width: 100%;
+    max-width: 280px;
+    padding: 24px 0;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid transparent;
+   
+}
+.country img{
+    
+    border-radius: 50%;
+}
+.country:hover{
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(15px);
+}
+.country:hover .country p{
+
+}
+
+.count-name{
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 26px */
+    margin-bottom: 5px;
+}
+.count-dest{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 18.2px */
+}
+@media screen and (max-width: 1270px) {
+    .container{
+        max-width: 90%;
+    }
+    .laptop-nav{
+        display: none;
+    }
+    .mobile-nav{
+        display: block;
+    }
+    .about-inner{
+        flex-wrap: wrap;
+    }
+    .about-content, .about-countries{
+        width: 100%;
+        margin: 12px 0;
+    }
+    .religions{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media screen and (max-width: 428px) {
+    .header-logo img{
+        width: 100%;
+        max-width: 38.95px;
+    }
+    .logo-content p:first-child{
+        font-size: 24px;
+    }
+    .logo-content p:last-child{
+        font-size: 10px;
+    }
+    .banner-content p{
+        font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 18.2px */
+    }
+    .banner-title{
+        font-size: 40px;
+    }
+    .location p{
+        font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    }
+    .banner-content a{
+        font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    padding: 12px 28px;
+    }
+    .banner-section{
+        padding: 100px 0;
+    }
+    .about-inner{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-content{
+        width: 100%;
+    }
+    .about-title{
+        color: var(--White, #FFF);
+    font-feature-settings: 'liga' off, 'calt' off;
+    text-shadow: 0px 10px 50px rgba(12, 15, 48, 0.40);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 36.4px */
+    }
+    .about-subtext{
+    color: var(--White, #FFF);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; 
+    }
+    .partners{
+        color: var(--White, #FFF);
+    font-feature-settings: 'liga' off, 'calt' off;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 26px */
+    }
+    
+    .about-section-btns{
+        margin: 23px 0;
+        display: flex;
+        align-items: center;
+    }
+    .about-btn, .explore-btn{
+        font-size: 14px;
+    }
+    .about-countries{
+        width: 100%;
+    }
+    .about-countries img{
+        width: 100%;
+        max-width: 67px;
+        height: 197px;
+    }
+    .banner-bg{
+        width: 431px;
+    height: 437px;
+    flex-shrink: 0;
+    bottom: 0;
+    }
+    .supportLogos{
+        display: block;
+    }
+    .partner img, .partner svg{
+        width: 100%;
+        max-width: 50px;
+        margin: 0;
+        padding: 0;
+    }
+    .partner{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    .partner p{
+        display: block;
+        margin-left: 12px;
+    }
+    .countries-inner{
+        justify-content: space-between;
+    }
+    .country{
+        width: 100%;
+        max-width: 173px;
+    }
+}
