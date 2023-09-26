@@ -607,7 +607,7 @@ header{
         height: 197px;
     }
     .banner-bg{
-        width: 431px;
+        width: 80%;
         height: 437px;
         flex-shrink: 0;
         bottom: 0;
