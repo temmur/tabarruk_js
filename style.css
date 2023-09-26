@@ -608,9 +608,9 @@ header{
     }
     .banner-bg{
         width: 431px;
-    height: 437px;
-    flex-shrink: 0;
-    bottom: 0;
+        height: 437px;
+        flex-shrink: 0;
+        bottom: 0;
     }
     .supportLogos{
         display: block;
@@ -629,6 +629,9 @@ header{
     .partner p{
         display: block;
         margin-left: 12px;
+    }
+    .religions{
+        grid-template-columns: 1fr 1fr;
     }
     .countries-inner{
         justify-content: space-between;
